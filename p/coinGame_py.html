@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Код игры "Кости 1-2"</h1>
+<p>Простейшая игра на <i>tkinter</i>, игрок и компьютер бросают кости, где на гранях только 1 и 2.
+Кто выбросит больше - победит.</p>
+<pre><code>#ALPHA
+
+import random
+from tkinter import*
+
+root = Tk()
+root.title = 'Drop Coin'
+root.geometry("300x300")
+
+hello = Label (root, text = 'Hello! Lets play the game with me.')
+hello.pack()
+
+def myFunc():
+	playerDrop = random.randint(1, 2)
+	aiDrop = random.randint(1, 2)
+	if (playerDrop > aiDrop):
+		playerWin = Label(root, text='You win!')
+		playerWin.pack()
+	elif (playerDrop < aiDrop):
+		playerLost = Label(root, text='You lost!')
+		playerLost.pack()
+	else:
+		itsDraw = Label(root, text='Its draw!')
+		itsDraw.pack()
+
+letsPlay = Button(root, text = 'play', command = myFunc)
+letsPlay.pack()
+
+root.mainloop()</code></pre>
+<p>Игра создавалась для изучения tkinter.</p>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+</html>

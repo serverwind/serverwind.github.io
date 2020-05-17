@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Расчет среднего времени на прочтение статьи</h1>
+<p>Данный скрипт выполняет функцию подсчета среднего времени, которое понадобится
+  для прочтения статьи. Первым делом прописываем это в <i>functions.php</i>:</p>
+<pre><code>if ( ! function_exists( 'gp_read_time' ) ) {
+function gp_read_time() {
+$text = get_the_content( '' );
+$words = str_word_count( strip_tags( $text ), 0, 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ' );
+if ( !empty( $words ) ) {
+$time_in_minutes = ceil( $words / 200
+ );
+return $time_in_minutes;
+}
+return false;
+}
+}
+</code></pre>
+<p>Следующий код выводит время на странице, прописать его можно к примеру в самой статье, то
+  есть в файле <i>single.php</i>:</p>
+<pre><code>&lt;?php echo gp_read_time(); ?&gt;
+&lt;?php _e( 'мин', ' ' ); ?&gt;
+</code></pre>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+</html>

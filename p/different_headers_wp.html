@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Разные файлы заголовков в зависимости от условия</h1>
+<p>В wordpress можно использовать множество шаблонов заголовков. Например если в определенной
+  категории хочется использовать не стандартный <i>header.php</i> а другой, например <i>header-banki.php</i>
+  это можно сделать так:</p>
+<pre><code>if (get_post_type() == 'banki') :     // можно использовать типы постов, категории и тд
+    get_header('banki');
+else :
+    get_header();</code></pre>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+</html>

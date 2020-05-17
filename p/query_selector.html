@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Использование querySelectorAll по css классам</h1>
+<p>Загоняем в переменную <i>divs</i> все содержимое тегов с классом <i>.ttt</i>, а после
+  используя <b>if</b> делаем что нужно, например при совпадении слов добавляем отступ:</p>
+<pre><code>var divs = document.querySelectorAll(".ttt");
+Array.from(divs).forEach(function(div) {
+  if (div.textContent.indexOf("здесь будет отступ слева") >= 0) {
+    div.style.paddingLeft = "20px";
+  }
+  if (div.textContent.indexOf("и тут тоже") >= 0) {
+    div.style.paddingLeft = "20px";
+  }
+});
+</code></pre>
+<p>Как код работает можно увидеть ниже:</p>
+<div class="ttt">здесь нет отступа.</div>
+<div class="ttt">здесь будет отступ слева.</div>
+<div class="ttt">и тут тоже.</div>
+<div class="ttt">а тут опять нет.</div>
+<p>Все варианты здесь имеют класс <i>.ttt</i>, но только два из них имеют отступ,
+  те самые которые прописаны в скрипте и совпали по словам.</p>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+<script>var divs = document.querySelectorAll(".ttt");
+Array.from(divs).forEach(function(div) {
+  if (div.textContent.indexOf("здесь будет отступ слева") >= 0) {
+    div.style.paddingLeft = "20px";
+  }
+  if (div.textContent.indexOf("и тут тоже") >= 0) {
+    div.style.paddingLeft = "20px";
+  }
+});</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Лабораторная работа №2</h1>
+<p><b>Подкидыватель монеток</b>: Создайте программу, которая будет выводит случайно 0 или 1.
+ Вместо 0 и 1, выводите “орёл” или “решка”. Добавьте цикл, чтобы программа так делала 50 раз.
+Выведите на экран, сколько раз выпал орёл и сколько - решка. </p>
+<pre><code>import random
+
+orel = 0
+reshka = 1
+orelScore = 0
+reshkaScore = 0
+i = 50
+
+while i != 0:
+	drop = random.randint(orel, reshka)
+	if drop == orel:
+		print('Орел')
+		orelScore += 1
+	else:
+		print('Решка')
+		reshkaScore += 1
+	i -= 1
+print('Орел ' + str(orelScore))
+print('Решка ' + str(reshkaScore))</code></pre>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+</html>

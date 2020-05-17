@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Удаление всех комментариев кроме одобренных</h1>
+<p>Не всегда антиспам плагин работает как положено, и бывает что пропускает большое
+количество спама. Удаление вручную иногда не срабатывает, т.к. если таких комментариев много
+. при попытке wordpress может выбить белый экран и тупо ничего не сделать.</p>
+<p>Проще и намного быстрее удалить эти комментарии из базы данных query запросом. Заходим
+  в базу данных своего сайта и прописываем этот запрос:</p>
+<pre><code>DELETE FROM wp_comments WHERE comment_approved = 0</code></pre>
+<i>Сделайте заранее бэкап базы данных. Код делает только то что описано, но так вам будет спокойнее.</i>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+</html>

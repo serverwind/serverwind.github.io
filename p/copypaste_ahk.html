@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10 clickable">Night Theme</span>
+<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Замена биндов копипастинга на Autohotkey</h1>
+<p>Однажды мне очень надоело использовать ctrl-a ctrl-c и ctrl-v для того чтобы выделить, скопировать
+  и вставить текст. Да и через некоторое время пальцы начали болеть. И я перебиндил эти
+  команды на кнопки F1, F2, F3. Код прост:</p>
+<pre><code>#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+F1::^a
+F2::^c
+F3::^v</code></pre>
+<p>Если вы не знакомы с Autohotkey то вам следует:</p>
+<ol>
+    <li>установить <a href="https://www.autohotkey.com/">Autohotkey</a></li>
+    <li>сохранить приведенный код в файле формата .ahk, например copypaste.ahk</li>
+    <li>запустить файл copypaste.ahk</li>
+    <li>использовать новую комбинацию биндов: SHIFT+A = F1, SHIFT+C = F2, SHIFT+V = F3</li>
+</ol>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+</body>
+</html>
