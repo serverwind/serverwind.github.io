@@ -16,11 +16,12 @@
 </nav>
 <main>
 <div class="main center">
-<div class="f-xlarge">Привет, я Lestra.</div>
+<div class="f-large">Привет, я Lestra.</div>
 <div>Здесь можно увидеть некоторые мои работы в сфере web-developing.</div>
 </div>
 <ul class="main">
 <h1>JavaScript</h1>
+<li class="padd-5 f-medium"><a href="p/tooltip_onclick.html">Появляющийся тултип по клику на элемент</a></li>
 <li class="padd-5 f-medium"><a href="p/mouseover_toggle.html">Показ и скрытие блока по mouseover</a></li>
 <li class="padd-5 f-medium"><a href="https://lestrangeqq.github.io/simpleClock/">Красивые часы</a></li>
 <li class="padd-5 f-medium"><a href="p/h1_based_block.html">Рекламный блок в зависимости от H1</a></li>
@@ -62,5 +63,23 @@
 <footer class="marg-20">
 <div class="center">&#169; Lestra 2020.</div>
 </footer>
+<!--
+<div class="lazyload"><!-- то что нужно загрузить при прокрутке --!></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/lazyLoad.js"></script>
+<script>$('.lazyload').lazyload({
+  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
+  // before it appears on viewport. It should be greater or equal zero.
+  threshold: 200,
+
+  // Sets the callback function when the load event is firing.
+  // element: The content in lazyload tag will be returned as a jQuery object.
+  load: function(element) {},
+
+  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
+  // element appear in screen. You could set other events including each one separated by a space.
+  trigger: "appear"
+});</script>-->
 </body>
 </html>
