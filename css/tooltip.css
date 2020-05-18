@@ -1,0 +1,28 @@
+#toolTip {
+  position: absolute;
+  top: 2px;
+  z-index: 999;
+  padding: 30px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  background: #f1e2e2;
+}
+.tooltip-hide {
+  display: none;
+}
+.tooltip-show {
+  display: block;
+}
+.closeTooltip {
+  background:#c9c5c5;
+  color:white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding:3px 5px;
+}
+.tooltipParent {
+  position:relative;
+  z-index:1;
+}
