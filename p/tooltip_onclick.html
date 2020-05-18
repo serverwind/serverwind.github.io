@@ -4,47 +4,18 @@
     <meta charset="utf-8">
     <title>lestrangeqq.github.io</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>#toolTip {
-      position: absolute;
-      width: 60%;
-      left: 10px;
-      z-index: 999;
-      padding: 30px;
-      font-size: 13px;
-      line-height: 20px;
-      text-align: left;
-      background: #d5f4ff
-    }
-    .tooltip-hide {
-      display: none
-    }
-    .tooltip-show {
-      display: block
-    }
-    .closeTooltip {
-      background: #c9c5c5;
-      color: #fff;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 3px 5px;
-      cursor: pointer
-    }
-    .tooltip-link {
-      color: #0962ee;
-      font-weight: 700;
-      cursor: pointer
-    }</style>
+    <link rel="stylesheet" href="../css/tooltip.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
-  <body>
-<nav class="marg-20">
-<div class="navi f-large">
-<a href="/"><span class="brandLetter">L</span>estra</a>
-<span class="f-right marg-side-10 clickable">Night Theme</span>
-<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
-</div>
-</nav>
+<body>
+  <nav class="marg-20">
+  <div class="navi f-large">
+  <a href="/"><span class="brandLetter">L</span>estra</a>
+  <span class="f-right marg-side-10">Night Theme</span>
+  <span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+  <span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+  </div>
+  </nav>
 <main>
 <div class="main">
 <h1>Появляющийся тултип по клику на элемент</h1>

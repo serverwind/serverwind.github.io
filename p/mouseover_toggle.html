@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <title>lestrangeqq.github.io</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
     <style>.reading-time {display: none;}</style>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
   <body>
-<nav class="marg-20">
-<div class="navi f-large">
-<a href="/"><span class="brandLetter">L</span>estra</a>
-<span class="f-right marg-side-10 clickable">Night Theme</span>
-<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
-</div>
-</nav>
+  <nav class="marg-20">
+  <div class="navi f-large">
+  <a href="/"><span class="brandLetter">L</span>estra</a>
+  <span class="f-right marg-side-10">Night Theme</span>
+  <span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+  <span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+  </div>
+  </nav>
 <main>
 <div class="main">
 <h1>Показ и скрытие блока по mouseover</h1>
@@ -45,4 +47,5 @@ $(".category-feature").hover(function(){
     $('.reading-time').hide();
 });
 </script>
+<script src="../js/tooltip.js"></script>
 </html>

@@ -2,16 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>lestrangeqq.github.io</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
   <body>
 <nav class="marg-20">
 <div class="navi f-large">
 <a href="/"><span class="brandLetter">L</span>estra</a>
-<span class="f-right marg-side-10 clickable">Night Theme</span>
-<a href="../contacts.html"><span class="f-right marg-side-10">Контакты</span></a>
+<span class="f-right marg-side-10">Night Theme</span>
+<span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+<span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
 </div>
 </nav>
 <main>
@@ -50,5 +53,6 @@ else:
 <footer class="marg-20">
 <div class="center">&#169; Lestra 2020.</div>
 </footer>
+<script src="../js/tooltip.js"></script>
 </body>
 </html>
