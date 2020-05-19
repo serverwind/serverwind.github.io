@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <style>.spoilerHidden {
+      display: none;
+    }
+    .spoilerShow {
+      display: block;
+    }
+    .spoilerButtonHide {
+      display: none;
+    }
+    #spoiler {
+      background: red;
+    }</style>
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10">Night Theme</span>
+<span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+<span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Реализация простого спойлера</h1>
+<p>Спойлер с кнопкой открывания и сворачивания, HTML:</p>
+<pre><code>&lt;button id="spoilerButton" onclick="openSpoiler()"&gt;Открыть&lt;/button&gt;
+&lt;div id="spoiler" class="spoilerHidden"&gt;
+  &lt;p&gt;HELLO&lt;/p&gt;
+  &lt;button id="spoilerClose" onclick="closeSpoiler()"&gt;Закрыть&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<p>CSS прост как 5 копеек:</p>
+<pre><code>.spoilerHidden {
+  display: none;
+}
+.spoilerShow {
+  display: block;
+}
+.spoilerButtonHide {
+  display: none;
+}
+#spoiler {
+  background: red;
+}</code></pre>
+<p>JS:</p>
+<pre><code>function openSpoiler() {
+  var spoiler = document.getElementById('spoiler');
+  var spoilerButton = document.getElementById('spoilerButton');
+  spoiler.classList.add('spoilerShow');
+  spoilerButton.classList.add('spoilerButtonHide');
+}
+function closeSpoiler() {
+  spoiler.classList.remove('spoilerShow');
+  spoilerButton.classList.remove('spoilerButtonHide');
+}</code></pre>
+<p>Живой пример как всегда ниже:</p>
+<button id="spoilerButton" onclick="openSpoiler()">Открыть</button>
+<div id="spoiler" class="spoilerHidden">
+  <p>HELLO</p>
+  <button id="spoilerClose" onclick="closeSpoiler()">Закрыть</button>
+</div>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+<script src="../js/tooltip.js"></script>
+<script>function openSpoiler() {
+  var spoiler = document.getElementById('spoiler');
+  var spoilerButton = document.getElementById('spoilerButton');
+  spoiler.classList.add('spoilerShow');
+  spoilerButton.classList.add('spoilerButtonHide');
+}
+function closeSpoiler() {
+  spoiler.classList.remove('spoilerShow');
+  spoilerButton.classList.remove('spoilerButtonHide');
+}</script>
+</body>
+</html>
