@@ -19,6 +19,7 @@ footer {margin-top:20px;}
 /*POSITIONING*/
 .f-right {float:right;}
 .center {text-align:center;}
+.left {text-align: left;}
 .marg-side-10 {margin:0px 10px;}
 .marg-10 {margin:10px 0px;}
 .marg-20 {margin:20px 0px;}
