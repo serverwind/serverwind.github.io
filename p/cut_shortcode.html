@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10">Night Theme</span>
+<span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+<span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Удаление шорткода из превью статьи</h1>
+<p>Иногда в превью попадает тег шорткода, и выглядит это некрасиво. Чтобы не перемещать его куда то ниже, убрать его можно таким образом:</p>
+<pre><code>var catchContents = document.querySelector('.home-feature');
+for (var i = 0; i < 9; i++) {
+catchContents.innerHTML = catchContents.innerHTML.replace('[contents]', '');
+}</code></pre>
+<p>Где <b>.home-feature</b> - селектор блока, где скрипт будет искать и удалять шорткод, [contents] - сам шорткод который нужно удалить.</p>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+<script src="../js/tooltip.js"></script>
+</body>
+</html>
