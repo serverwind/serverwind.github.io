@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10">Night Theme</span>
+<span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+<span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Получение значения meta с сайта и работа с ним</h1>
+<p>Если нужно для какой то задачи получить значение меты, например дату публикации статьи:</p>
+<pre><code>var metaDate = document.querySelector('meta[itemprop="datePublished"]').content;
+}</code></pre>
+<p>Здесь мы получим дату в формате yyyy.mm.dd.</p>
+<p>И теперь допустим мы хотим чтобы в статьях 2019 и более ранних что то происходило. Вырезаем лишнее из даты которая теперь хранится в переменной <b>metaDate</b>, чтобы оставить просто год(заодно сразу переводим ее в integer):</p>
+<pre><code>var cutDate = parseInt(metaDate.substring(0, 4));
+</code></pre>
+<p>Теперь у нас есть только год в формате числа, осталось добавить условие:</p>
+<pre><code>if (cutDate <= 2019) {
+console.log('дата публикации статьи была в 2019 году или раньше.')
+} else {
+console.log('дата публикации статьи была позже 2019 года.')
+}
+</code></pre>
+<p>Код полностью:</p>
+<pre><code>var metaDate = document.querySelector('meta[itemprop="datePublished"]').content;
+var cutDate = parseInt(metaDate.substring(0, 4));
+console.log(cutDate)
+if (cutDate <= 2019) {
+console.log('yaw')
+}
+</code></pre>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+<script src="../js/tooltip.js"></script>
+</body>
+</html>
