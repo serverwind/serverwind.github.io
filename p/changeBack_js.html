@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <style>button {
+  background-color:red;
+  color:white;
+  font-size:18px;
+  padding:15px;
+  border: 1px solid white;
+}</style>
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10">Night Theme</span>
+<span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+<span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>Изменение цвета бэкграунда по клику</h1>
+<p>HTML:</p>
+<pre><code>&lt;button id='button' onclick='changeBack()'&gt;Click&lt;/button&gt;
+</code></pre>
+<p>CSS:</p>
+<pre><code>button {
+  background-color:red;
+  color:white;
+  font-size:18px;
+  padding:15px;
+  border: 1px solid white;
+}</code></pre>
+<p>JS:</p>
+<pre><code>let colors = ['red', 'blue', 'yellow']; //массив с цветами для бэкграунда
+let i = 0; //переменная нужна чтобы бэкграунд динамично менялся на цвета из массивов. 0 - red, и т.д.
+
+function changeBack() {
+	i++; //каждый раз кликая по кнопке и запуская функцию к переменной будет прибавляться 1, то есть если переменная была i=0; i++ прибавит к ней 1 и выведет другой цвет из массива.
+  if (i == 3) i = 0; //т.к. у нас 3 элемента в массиве [0, 1, 2], то по достижению i==3 мы сбрасываем переменную i опять до 0.
+	document.querySelector('body').style.background = colors[i]; //colors[i] - выведет элемент (номер цвета) из массива равный текущему значению переменной i.
+} </code></pre>
+<p>Живой пример:</p>
+<button id='button' onclick='changeBack()'>Click</button>
+</div>
+</main>
+<footer class="marg-20">
+<div class="center">&#169; Lestra 2020.</div>
+</footer>
+<script src="../js/tooltip.js"></script>
+<script>
+let colors = ['red', 'blue', 'yellow'];
+let i = 0;
+function changeBack() {
+	i++; 
+  if (i == 3) i = 0; 
+	document.querySelector('body').style.background = colors[i];
+}
+</script>
+</body>
+</html>
