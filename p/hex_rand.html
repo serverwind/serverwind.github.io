@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lestrangeqq.github.io</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <style>.block {
+  text-align:center;
+}
+#result {
+  background:black;
+  font-family: 'Segoe UI';
+  font-size:1.5em;
+  font-weight: 200;
+  color:white;
+  margin-top:20px;
+}</style>
+  </head>
+  <body>
+<nav class="marg-20">
+<div class="navi f-large">
+<a href="/"><span class="brandLetter">L</span>estra</a>
+<span class="f-right marg-side-10">Night Theme</span>
+<span class="f-right marg-side-10 tooltipParent clickable"><span onclick="openTooltip()">Контакты</span><span id="toolTip" class="tooltip-hide">lestrangeqq@gmail.com
+<span onclick="removeTooltip()" class="closeTooltip clickable">x</span></span></span>
+</div>
+</nav>
+<main>
+<div class="main">
+<h1>CSS Hex - генератор случайных цветов</h1>
+<div class='block'>
+  <button onclick='myFunc()'>Click</button>
+  <div id='result'>После клика цвет фона изменится на случайно сгенерированный, а здесь будет код этого #цвета.</div>
+</div>
+<script>
+const hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+
+function myFunc() {
+  let r1 = hex[Math.floor(Math.random() * hex.length)];
+  let r2 = hex[Math.floor(Math.random() * hex.length)];
+  let g1 = hex[Math.floor(Math.random() * hex.length)];
+  let g2 = hex[Math.floor(Math.random() * hex.length)];
+  let b1 = hex[Math.floor(Math.random() * hex.length)];
+  let b2 = hex[Math.floor(Math.random() * hex.length)];
+  let fullHex = '#' + r1 + r2 + g1 + g2 + b1 + b2;
+	
+  document.getElementById('result').innerHTML = fullHex;
+  document.querySelector('body').style.background = fullHex;
+}
+</script>
+</body>
+</html>
