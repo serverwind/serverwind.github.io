@@ -1,0 +1,87 @@
+html {
+  font-size:10px;
+}
+
+body {
+  margin:0px;
+}
+
+.header {
+  background:red;
+  padding:20px;
+  text-align:center;
+  color:white;
+  text-shadow: 1px 1px black;
+  font-size: 2.2em;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.7em;
+  padding:20px;
+  text-align:center;
+}
+
+#img-div{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  border:2px solid red;
+}
+
+#image {
+  max-width:100%;
+  margin-bottom:-3px;
+  display:block;
+}
+
+#img-caption {
+  text-align:center;
+  font-size:1.7em;
+  padding:10px;
+  background:red;
+  color:white;
+  font-style:italic;
+}
+
+#tribute-info h2 {
+  text-align:center;
+  font-size:3em;
+  padding-top:20px;
+}
+
+#tribute-info ul li {
+  font-size:1.7em;
+  padding-bottom:5px;
+}
+
+li .date {
+  font-weight:600;
+}
+
+hr {
+  width:95%;
+  color:red;
+  margin-top:10px;
+}
+
+.epilogue {
+  font-size:1.7em;
+  padding:20px 0px 0px 20px;
+}
+
+.last-words {
+  font-size:1.7em;
+  padding:0px 20px 20px 20px;
+}
+
+footer {
+  background:red;
+  padding:20px;
+  font-size:1.4em;
+  color:white;
+}
+
+footer a {
+  color:black;
+}
