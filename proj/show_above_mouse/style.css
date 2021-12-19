@@ -1,0 +1,10 @@
+#spanhovering {
+    cursor: pointer;
+}
+#divtoshow {
+    position: absolute;
+    display: none;
+    font-size:16px;
+    padding:10px;
+    background-color:lightblue;
+}

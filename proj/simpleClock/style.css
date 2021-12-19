@@ -1,0 +1,19 @@
+body {
+	background-color:black;
+	color:white;
+}
+
+#time {
+	padding-top:20px;
+	text-align:center;
+	font-size: 48px;
+	font-family: 'Orbitron', sans-serif;
+	color:#39ff02;
+}
+
+#today, #suggest {
+	text-align:center;
+	font-size: 24px;
+	font-family: 'Orbitron', sans-serif;
+	color:#39ff02;
+}

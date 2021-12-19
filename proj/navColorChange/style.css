@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+nav {
+  text-align: center;
+  padding: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+}
+
+nav span {
+  padding: 0 5px;
+}
+
+.home-active {
+  background-color: yellow;
+}
+
+.arsenal-active {
+  background-color: red;
+}
+
+.chelsea-active {
+  background-color: blue;
+}
+
+.newcastle-active {
+  background-color: black;
+  color: white;
+}
+
+.img {
+  text-align: center;
+}

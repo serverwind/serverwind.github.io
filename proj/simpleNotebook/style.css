@@ -1,0 +1,37 @@
+body {
+    background-color: linen;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+textarea {
+    padding: 5px;
+    width: 50%;
+    height: 7em;
+}
+
+#notebook div {
+    font-size: 1.2em;
+}
+
+.remove {
+    margin-left: 10px;
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.remove:hover {
+    opacity: 1;
+}

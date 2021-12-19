@@ -1,0 +1,95 @@
+body {
+    background-color: linen;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article,
+main {
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p,
+a {
+    font-size: 1.2em;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px dashed black;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 60em;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: #fff;
+}
+
+button {
+    display: inline-block;
+    border: solid 1px #000;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: red;
+}
+
+mark {
+    background: orange
+}
+
+#mark-wrap {
+    display: none;
+    position: fixed;
+    bottom: 1px;
+    right: 5px;
+    min-width: 15em;
+    max-width: 20em;
+    max-height: 20em;
+    background: #242424;
+    color: white;
+    overflow-y: auto;
+    border: 1px solid #242424;
+}
+
+.hidden-list {
+    display: none;
+}
+
+#list-header {
+    margin: 10px;
+}
+
+#mark-list {
+    background: white;
+    color: black;
+}
+
+#mark-list ol {
+    margin-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#num-of-marks {
+    background: white;
+    color: black;
+    font-size: 0.8em;
+    border-radius: 50px;
+    padding: 2px 7px;
+}
