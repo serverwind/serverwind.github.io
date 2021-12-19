@@ -1,38 +1,78 @@
-/*MAIN TAGS*/
-body {font-family: 'PT Sans Narrow', sans-serif;}
-nav, main {width:100%;}
-a {text-decoration: none; color: #424242;}
-h1 {font-size: 2.0em; margin-bottom:0px;}
-h2 {font-size: 1.5em;}
-main ul li {border-bottom:1px solid #f6ecec;}
-main ul li a {width:100%; display: inline-block;}
-pre {background-color: #fff0f0; border-left: 2px solid; padding:10px; overflow-x: auto;}
-footer {margin-top:20px;}
+/* 
 
-/*FOR ALL*/
-/*FONTS*/
-.f-small {font-size: 0.8em;}
-.f-medium {font-size: 1.2em;}
-.f-large {font-size: 1.5em;}
-.f-xlarge {font-size: 2.0em;}
+Lestra CSS 2021. 
 
-/*POSITIONING*/
-.f-right {float:right;}
-.center {text-align:center;}
-.left {text-align: left;}
-.marg-side-10 {margin:0px 10px;}
-.marg-10 {margin:10px 0px;}
-.marg-20 {margin:20px 0px;}
-.padd-5 {padding:5px;}
-.padd-10 {padding: 10px;}
+Units: 
+  * em for fonts.
+  * rem for padd/margins.
+  * % for layouts.
 
-/*CLASSES*/
-.navi, .main {margin:0 auto; max-width: 800px;}
-.brandLetter {background-color: red; color: white; padding: 0px 12px; border-radius: 7px;}
-.ul-square {list-style-type: square;}
-.ul-circle {list-style-type: circle;}
-.ul-arrow {list-style-type: disclosure-closed;}
-.clickable {cursor: pointer;}
-.main a:hover {background-color:#f6ecec;}
-/*IDs*/
-#yourText {background-color:#f1e2e2;}
+*/
+
+:root {
+	--light-gray: #f3efef;
+	--gray: #757575;
+	--dark: #242424;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	color: var(--dark);
+}
+
+/* <HEADER>*</HEADER> */
+
+header {
+	max-width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	font-size: 1.5em;
+	border-bottom: 1px solid var(--light-gray);
+	padding: 1rem 0;
+}
+
+.header-logo {
+	background-color: var(--dark);
+	padding: 0.6rem;
+	transition: 0.5s;
+}
+
+.header-logo:hover {
+	opacity: 0.8;
+}
+
+.header-logo a {
+	text-decoration: none;
+	color: var(--light-gray);
+}
+
+.header-links {
+	text-align: right;
+}
+
+.header-links a {
+	color: var(--gray);
+	text-decoration-style: solid;
+	padding: 0.2rem;
+	transition: 0.5s;
+}
+
+.header-links a:hover {
+	color: var(--dark);
+	text-decoration-style:double;
+}
+
+/* <MAIN>*</MAIN> */
+
+main {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2rem;
+}
