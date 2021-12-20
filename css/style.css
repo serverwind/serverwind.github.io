@@ -10,9 +10,14 @@ Units:
 */
 
 :root {
+	/* COLORS */
 	--light-gray: #f3efef;
 	--gray: #757575;
-	--dark: #242424;
+	--purple: #1f1925;
+
+	/* TYPOGRAPHY */
+	--medium: 1.2em;
+	--giant: 2.7em;
 }
 
 html {
@@ -21,7 +26,8 @@ html {
 
 body {
 	margin: 0;
-	color: var(--dark);
+	color: var(--purple);
+	font-family: 'Mukta', sans-serif;
 }
 
 /* <HEADER>*</HEADER> */
@@ -33,13 +39,13 @@ body {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	align-items: center;
-	font-size: 1.5em;
-	border-bottom: 1px solid var(--light-gray);
+	font-size: var(--medium);
+	font-weight: lighter;
 	padding: 1.5rem 0;
 }
 
 .header-logo {
-	background-color: var(--dark);
+	background-color: var(--purple);
 	padding: 0.6rem;
 	transition: 0.5s;
 	margin-left: 1rem;
@@ -67,49 +73,64 @@ body {
 }
 
 .header-links a:hover {
-	color: var(--dark);
+	color: var(--purple);
 	text-decoration-style:double;
 }
 
 .first-screen {
-	background-color: lightgray;
-	height: 85vh;
+	min-height: 86vh;
 	position: relative;
 	z-index: 1;
 	display: grid;
 	grid-template-rows: auto auto;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
+	background-image: url('/img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #1c111f;
+	color: var(--light-gray);
+	padding-left: 2em;
 }
 
-.hello-wrapper {
-	margin: 0 1rem 0 1rem;
+.hello-wrapper p {
+	margin: 0.5em 0 0.5em 0;
 }
 
 .hello-wrapper-hi {
-	font-size: 1.1em;
+	font-size: var(--medium);
+	font-weight: lighter;
 }
 
 .hello-wrapper-name {
-	font-size: 2.4em;
+	font-size: var(--giant);
 	font-weight: bold;
 }
 
 .hello-wrapper-special {
-	font-size: 2.4em;
+	font-size: var(--giant);
 	font-weight: bold;
 }
 
 .hello-wrapper-desc {
-	font-size: 1.1em;
+	font-weight: lighter;
+	font-size: var(--medium);
 	max-width: 600px;
+}
+
+.hello-button {
+	border: 0;
+	width: 15rem;
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
 }
 
 
 /* <MAIN>*</MAIN> */
 
 main {
-	font-size: 2em;
+	font-size: var(--giant);
 	font-weight: bold;
 	text-align: center;
 	margin-top: 2rem;
@@ -119,7 +140,7 @@ main {
 /* <FOOTER>*</FOOTER> */
 
 footer {
-	font-size: 1.5em;
+	font-size: var(--medium);
 	text-align: center;
 	margin-top: 2rem;
 }
