@@ -26,21 +26,25 @@ body {
 
 /* <HEADER>*</HEADER> */
 
-header {
-	max-width: 90%;
+.header-navi {
+	background-color: var(--light-gray);
+	width: 100%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	align-items: center;
 	font-size: 1.5em;
 	border-bottom: 1px solid var(--light-gray);
-	padding: 1rem 0;
+	padding: 1.5rem 0;
+	position: fixed;
+	z-index: 999;
 }
 
 .header-logo {
 	background-color: var(--dark);
 	padding: 0.6rem;
 	transition: 0.5s;
+	margin-left: 1rem;
 }
 
 .header-logo:hover {
@@ -53,6 +57,7 @@ header {
 }
 
 .header-links {
+	margin-right: 1rem;
 	text-align: right;
 }
 
@@ -66,6 +71,13 @@ header {
 .header-links a:hover {
 	color: var(--dark);
 	text-decoration-style:double;
+}
+
+.first-screen {
+	background-color: red;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
 }
 
 /* <MAIN>*</MAIN> */
