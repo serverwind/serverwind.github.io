@@ -36,8 +36,6 @@ body {
 	font-size: 1.5em;
 	border-bottom: 1px solid var(--light-gray);
 	padding: 1.5rem 0;
-	position: fixed;
-	z-index: 999;
 }
 
 .header-logo {
@@ -74,11 +72,39 @@ body {
 }
 
 .first-screen {
-	background-color: red;
-	height: 100vh;
+	background-color: lightgray;
+	height: 85vh;
 	position: relative;
 	z-index: 1;
+	display: grid;
+	grid-template-rows: auto auto;
+	align-items: center;
+	justify-content: center;
 }
+
+.hello-wrapper {
+	margin: 0 1rem 0 1rem;
+}
+
+.hello-wrapper-hi {
+	font-size: 1.1em;
+}
+
+.hello-wrapper-name {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+.hello-wrapper-special {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+.hello-wrapper-desc {
+	font-size: 1.1em;
+	max-width: 600px;
+}
+
 
 /* <MAIN>*</MAIN> */
 
