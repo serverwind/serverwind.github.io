@@ -26,6 +26,7 @@ body {
     gap: 10px;
     grid-template-columns: 1fr 2fr;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .card-img img {
