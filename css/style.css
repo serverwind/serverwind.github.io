@@ -160,6 +160,7 @@ main {
 	border-radius: 5px;
 	transform: translateY(0px);
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .skills-html:hover {
@@ -185,6 +186,7 @@ main {
 	border-radius: 5px;
 	transform: translateY(0px);
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .skills-css:hover {
@@ -210,6 +212,7 @@ main {
 	border-radius: 5px;
 	transform: translateY(0px);
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .skills-js:hover {
