@@ -15,6 +15,7 @@ Units:
 	--gray: #757575;
 	--purple: #1f1925;
 	--white: #fdfdfd;
+	--transparent: rgba(31, 25, 37, 0.75);;
 
 	/* TYPOGRAPHY */
 	--medium: 1.2em;
@@ -151,23 +152,77 @@ main {
 
 .skills-html {
 	height: 300px;
-	background-color: red;
+	background-image: url('/img/html.jpg');
+	background-size: cover;
 	display: grid;
-	align-content: end;
+	align-content: center;
+	justify-content: center;
+	border-radius: 5px;
+	transform: translateY(0px);
+	transition: 0.5s;
+}
+
+.skills-html:hover {
+	transform: translateY(-6px);
+}
+
+.skills-html-title h2 {
+	display: inline-block;
+	font-size: var(--giant);
+	color: var(--white);
+	background-color: var(--transparent);
+	padding: 0rem 1rem 0 1rem;
+	border-bottom: 3px solid var(--white);
 }
 
 .skills-css {
 	height: 300px;
-	background-color: lightblue;
+	background-image: url('/img/css.jpg');
+	background-size: cover;
 	display: grid;
-	align-content: end;
+	align-content: center;
+	justify-content: center;
+	border-radius: 5px;
+	transform: translateY(0px);
+	transition: 0.5s;
+}
+
+.skills-css:hover {
+	transform: translateY(-6px);
+}
+
+.skills-css-title h2 {
+	display: inline-block;
+	font-size: var(--giant);
+	color: var(--white);
+	background-color: var(--transparent);
+	padding: 0rem 1rem 0 1rem;
+	border-bottom: 3px solid var(--white);
 }
 
 .skills-js {
 	height: 300px;
-	background-color: yellow;
+	background-image: url('/img/js.jpg');
+	background-size: cover;
 	display: grid;
-	align-content: end;
+	align-content: center;
+	justify-content: center;
+	border-radius: 5px;
+	transform: translateY(0px);
+	transition: 0.5s;
+}
+
+.skills-js:hover {
+	transform: translateY(-6px);
+}
+
+.skills-js-title h2 {
+	display: inline-block;
+	font-size: var(--giant);
+	color: var(--white);
+	background-color: var(--transparent);
+	padding: 0rem 1rem 0 1rem;
+	border-bottom: 3px solid var(--white);
 }
 
 
