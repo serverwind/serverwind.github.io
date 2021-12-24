@@ -228,6 +228,40 @@ main {
 	border-bottom: 3px solid var(--white);
 }
 
+.suggest {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.suggest-template,
+.suggest-wp,
+.suggest-backup,
+.suggest-insight,
+.suggest-google,
+.suggest-code {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 20px;
+}
+
+.suggest-template img,
+.suggest-wp img,
+.suggest-backup img,
+.suggest-insight img,
+.suggest-google img,
+.suggest-code img {
+	width: 100px;
+}
+
+.suggest-template p,
+.suggest-wp p,
+.suggest-backup p,
+.suggest-insight p,
+.suggest-google p,
+.suggest-code p {
+	font-size: 1.2em;
+}
 
 /* <FOOTER>*</FOOTER> */
 
