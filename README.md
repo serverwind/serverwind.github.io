@@ -4,3 +4,4 @@ Portfolio with some of my works (in active development now). Small CSS/JS projec
 ...especially:
 
 # FootNotes.JS
+lestrangeqq.github.io/proj/footNotes/
