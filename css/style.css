@@ -142,6 +142,10 @@ main {
 	padding: 2rem;
 }
 
+.skills a {
+	color: var(--white);
+}
+
 .skills-header {
 	padding-top: 2rem;
 	margin-bottom: 0;
