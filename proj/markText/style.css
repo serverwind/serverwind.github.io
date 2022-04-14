@@ -1,37 +1,4 @@
-body {
-    background-color: linen;
-    font-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-article,
-main {
-    margin: 0 auto;
-    max-width: 60em;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-p,
-a {
-    font-size: 1.2em;
-}
-
-hr {
-    border: 0px;
-    border-top: 1px dashed black;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    max-width: 60em;
-    text-align: center;
-    padding: 20px;
-}
 
 button {
     display: none;

@@ -2,17 +2,28 @@
 <html>
 
 <head>
-    <title>Test page</title>
+    <title>markText.js</title>
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;500;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-
+        <nav class='header-navi'>
+            <span class='header-logo'><a class='header-logo-link' href='#'>LESTRA</a></span>
+            <span class='header-links'>
+                <a href='#'>Projects</a>
+                <a href='#'>About</a>
+                <a href='#'>Contacts</a>
+            </span>
+        </nav>
     </header>
-    <article>
+    <main>
         <h1>Тест</h1>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
             here, content here', making it look like readable English. Many C<sup>3</sup> desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still
@@ -21,11 +32,11 @@
         <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for</p>
         <hr>
         <button id='clickFunc'>click</button>
-    </article>
     <div id='mark-wrap'>
         <div id='list-header'>Пометки <span id='num-of-marks'></span></div>
         <div id='mark-list' class='hidden-list'></div>
     </div>
+    </main>
     <footer>
         <div class='copyrights'>
             © Lestra 2021.

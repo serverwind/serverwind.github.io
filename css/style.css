@@ -137,7 +137,7 @@ main {
 
 .skills {
 	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-columns: 2fr 1fr 1fr;
 	gap: 10px;
 	padding: 2rem;
 }
@@ -228,39 +228,30 @@ main {
 	border-bottom: 3px solid var(--white);
 }
 
-.suggest {
-	max-width: 80%;
-	margin: 0 auto;
-}
-
-.suggest-template,
-.suggest-wp,
-.suggest-backup,
-.suggest-insight,
-.suggest-google,
-.suggest-code {
+.skills-card1 {
+	height: 300px;
+	background-image: url('/proj/nft-card-component/images/image-equilibrium.jpg');
+	background-size: cover;
 	display: grid;
-	grid-template-columns: auto 1fr;
-	align-items: center;
-	gap: 20px;
+	align-content: center;
+	justify-content: center;
+	border-radius: 5px;
+	transform: translateY(0px);
+	transition: 0.5s;
+	cursor: pointer;
 }
 
-.suggest-template img,
-.suggest-wp img,
-.suggest-backup img,
-.suggest-insight img,
-.suggest-google img,
-.suggest-code img {
-	width: 100px;
+.skills-card1:hover {
+	transform: translateY(-6px);
 }
 
-.suggest-template p,
-.suggest-wp p,
-.suggest-backup p,
-.suggest-insight p,
-.suggest-google p,
-.suggest-code p {
-	font-size: 1.2em;
+.skills-card1-title h2 {
+	display: inline-block;
+	font-size: var(--giant);
+	color: var(--white);
+	background-color: var(--transparent);
+	padding: 0rem 1rem 0 1rem;
+	border-bottom: 3px solid var(--white);
 }
 
 /* <FOOTER>*</FOOTER> */
