@@ -1,0 +1,108 @@
+:root {
+	/* COLORS */
+	--red: #ff4647;
+	--black: #242424;
+	--white: #fff;
+
+	/* FONTS */
+	--main-f: 'Ubuntu', sans-serif;
+}
+
+body {
+	margin: 40px 0 40px 0;
+	background-color: var(--black);
+	color: var(--black);
+	font-family: var(--main-f);
+}
+
+.card {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 80%;
+	background-color: var(--white);
+	border-radius: 10px;
+}
+
+.card-info {
+	display: grid;
+	padding: 30px 50px;
+}
+
+.card-info-brand {
+	font-family: var(--main-f);
+	font-weight: 700;
+	font-size: 2.5em;
+	margin-right: 10px;
+}
+
+.card-info-brand-tag {
+	color: var(--red);
+	font-family: var(--main-f);
+	font-weight: 700;
+}
+
+.card-info-link {
+	font-family: var(--main-f);
+	font-weight: 700;
+	margin-left: 25px;
+	position: relative;
+	bottom: 5px;
+}
+
+.card-header {
+	font-size: 3em;
+	align-self: center;
+	margin: 0;
+}
+
+.card-desc {
+	font-size: 1.25em;
+}
+
+.card-social-hello {
+	border: 0;
+    padding: 20px;
+    background: var(--red);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.card-social {
+	display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 60px;
+}
+
+.card-social-insta i {
+	font-size: 2em;
+}
+
+.card-social-vk i {
+	font-size: 2em;
+}
+
+.card-social-vk {
+	text-align: left;
+}
+
+.card-skills {
+	align-self: center;
+	text-align: center;
+}
+
+.card-skills-wp i, .card-skills-js i, .card-skills-html i, .card-skills-css i {
+	font-size: 2em;
+	margin-left: 10px;
+}
+
+.card-photo img {
+	width: 100%;
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+    display: block;
+}

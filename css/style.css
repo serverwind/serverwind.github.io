@@ -15,6 +15,7 @@ Units:
     --gray: #757575;
     --purple: #1f1925;
     --white: #fdfdfd;
+    --dark: #242424;
     --transparent: rgba(31, 25, 37, 0.75);
     ;
 
@@ -264,10 +265,176 @@ main {
     transition: 0.5s;
 }
 
+.skills-card2 {
+    height: 300px;
+    background-image: url('/proj/order-summary-component/images/illustration-hero.svg');
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.skills-card2:hover {
+    transform: translateY(-6px);
+}
+
+.skills-card2-title h2 {
+    display: inline-block;
+    font-size: var(--giant);
+    color: var(--white);
+    background-color: var(--transparent);
+    padding: 0rem 1rem 0 1rem;
+    border-bottom: 3px solid var(--white);
+    transition: 0.5s;
+}
+
+.skills-card3 {
+    height: 300px;
+    background-image: url('/proj/productCard/img/jacket.jpg');
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.skills-card3:hover {
+    transform: translateY(-6px);
+}
+
+.skills-card3-title h2 {
+    display: inline-block;
+    font-size: var(--giant);
+    color: var(--white);
+    background-color: var(--transparent);
+    padding: 0rem 1rem 0 1rem;
+    border-bottom: 3px solid var(--white);
+    transition: 0.5s;
+}
+
+.skills-clock {
+    height: 300px;
+    background-color: var(--dark);
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.skills-clock:hover {
+    transform: translateY(-6px);
+}
+
+.skills-clock-title h2 {
+    display: inline-block;
+    font-size: var(--giant);
+    color: var(--white);
+    background-color: var(--transparent);
+    padding: 0rem 1rem 0 1rem;
+    border-bottom: 3px solid var(--white);
+    transition: 0.5s;
+}
+
+.skills-todo {
+    height: 300px;
+    background-color: var(--transparent);
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.skills-todo:hover {
+    transform: translateY(-6px);
+}
+
+.skills-todo-title h2 {
+    display: inline-block;
+    font-size: var(--giant);
+    color: var(--white);
+    background-color: var(--transparent);
+    padding: 0rem 1rem 0 1rem;
+    border-bottom: 3px solid var(--white);
+    transition: 0.5s;
+}
+.skills-rg {
+    height: 300px;
+    background-image: url('https://lestrangeqq.github.io/rockstar-template/assets/img/rdr-sample1.jpg');
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.skills-rg:hover {
+    transform: translateY(-6px);
+}
+
+.skills-rg-title h2 {
+    display: inline-block;
+    font-size: var(--giant);
+    color: var(--white);
+    background-color: var(--transparent);
+    padding: 0rem 1rem 0 1rem;
+    border-bottom: 3px solid var(--white);
+    transition: 0.5s;
+}
+.skills-card4 {
+    height: 300px;
+    background-image: url('/proj/serviceCard/card.jpg');
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.skills-card4:hover {
+    transform: translateY(-6px);
+}
+
+.skills-card4-title h2 {
+    display: inline-block;
+    font-size: var(--giant);
+    color: var(--white);
+    background-color: var(--transparent);
+    padding: 0rem 1rem 0 1rem;
+    border-bottom: 3px solid var(--white);
+    transition: 0.5s;
+}
+
 .skills-css-title h2:hover,
 .skills-js-title h2:hover,
 .skills-html-title h2:hover,
-.skills-card1-title h2:hover {
+.skills-card1-title h2:hover,
+.skills-card2-title h2:hover,
+.skills-card3-title h2:hover,
+.skills-card4-title h2:hover,
+.skills-clock-title h2:hover,
+.skills-todo-title h2:hover,
+.skills-rg-title h2:hover {
     background-color: var(--purple);
 }
 

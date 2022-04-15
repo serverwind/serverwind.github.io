@@ -1,5 +1,5 @@
 /* 
-     Name: Notebook 
+     Name: ToDo List 
      Author: Lestra
      Version: 0.1
 */
