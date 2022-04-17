@@ -21,7 +21,8 @@ Units:
 
     /* TYPOGRAPHY */
     --medium: 1.2em;
-    --giant: 2.7em;
+    --giant: 2.4em;
+    --pangea: 3em;
 }
 
 body {
@@ -33,6 +34,10 @@ body {
 }
 
 /* <HEADER>*</HEADER> */
+
+header {
+    margin-bottom: 2rem;
+}
 
 .header-navi {
     background-color: var(--light-gray);
@@ -135,13 +140,13 @@ main {
     background-color: var(--white);
     max-width: 90%;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .skills {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 10px;
-    padding: 2rem;
 }
 
 .skills a {
@@ -150,11 +155,10 @@ main {
 }
 
 .skills-header {
-    padding-top: 2rem;
-    margin-bottom: 0;
-    font-size: var(--giant);
+    font-size: var(--pangea);
     font-weight: bold;
     text-align: center;
+    margin-top: 0;
 }
 
 .skills-html {

@@ -1,5 +1,5 @@
 # lestrangeqq.github.io
-Portfolio with some of my works (in active development now). CSS/JS projects can be found here, in /proj directory.
+Portfolio with some of my works (in active development, moving it to VUE now). CSS/JS projects can be found here, in /proj directory.
 
 ...especially:
 
