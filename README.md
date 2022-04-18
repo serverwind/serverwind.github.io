@@ -4,4 +4,4 @@ Portfolio with some of my works (in active development, moving it to VUE now). C
 ...especially:
 
 # FootNotes.JS
-* https://lestrangeqq.github.io/#/proj/footNotes/
+* https://lestrangeqq.github.io/#/proj/footNotes/ 
