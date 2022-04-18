@@ -244,7 +244,7 @@ main {
 
 .skills-card1 {
     height: 300px;
-    background-image: url('/proj/nft-card-component/images/image-equilibrium.jpg');
+    background-image: url('../../img/proj/image-equilibrium.jpg');
     background-size: cover;
     display: grid;
     align-content: center;
