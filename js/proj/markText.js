@@ -4,7 +4,7 @@ var TEXTARRAY = [""],
     OPENLIST = document.getElementById("mark-wrap"),
     LISTHEADER = document.getElementById("list-header"),
     MARKNUMS = document.getElementById("num-of-marks");
-let numOfMarks = 0;
+var numOfMarks = 0;
 
 function makeBold() { var e = window.getSelection().getRangeAt(0),
         t = e.extractContents(),
