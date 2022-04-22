@@ -14,6 +14,7 @@ Units:
     --light-gray: #f3efef;
     --gray: #757575;
     --purple: #1f1925;
+    --violet: #1c111f;
     --white: #fdfdfd;
     --dark: #242424;
     --transparent: rgba(31, 25, 37, 0.75);
@@ -95,7 +96,7 @@ header {
     background-image: url('/img/bg.jpg');
     background-repeat: no-repeat;
     background-position: right;
-    background-color: #1c111f;
+    background-color: var(--violet);
     color: var(--light-gray);
     padding-left: 2em;
 }
@@ -131,6 +132,25 @@ header {
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.my-contacts {
+    background-color: var(--violet);
+    min-height: 86vh;
+    background-image: url('/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: none;
+    align-items: center;
+}
+
+.my-contacts-wrapper {
+    text-align: center;
+}
+
+.my-contacts-wrapper a {
+    font-size: var(--giant);
+    color: var(--white);
 }
 
 
