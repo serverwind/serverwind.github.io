@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  p {
+    @apply my-3 text-lg;
+  }
+  h2 {
+    @apply text-4xl text-center font-bold pb-5;
+  }
+}
