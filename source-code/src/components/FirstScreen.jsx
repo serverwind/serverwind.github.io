@@ -1,9 +1,9 @@
-import js from "../assets/js.svg";
-import css from "../assets/css.svg";
-import html from "../assets/html.svg";
-import reactIcon from "../assets/react.svg";
-import wp from "../assets/wp.svg";
-import tailwindIcon from "../assets/tailwind.svg";
+import js from "../../public/assets/js.svg";
+import css from "../../public/assets/css.svg";
+import html from "../../public/assets/html.svg";
+import reactIcon from "../../public/assets/react.svg";
+import wp from "../../public/assets/wp.svg";
+import tailwindIcon from "../../public/assets/tailwind.svg";
 import Social from "./Social";
 
 const Hello = () => {

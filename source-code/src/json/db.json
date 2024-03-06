@@ -5,7 +5,7 @@
     "desc": "Responsive template for CMS Wordpress.",
     "tech": "CSS, JS, PHP",
     "link": "https://rockstargame.su/",
-    "img": "../../src/assets/rg.jpg"
+    "img": "../../public/assets/rg.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "desc": "Page with tests where seamans can prepare online for exams.",
     "tech": "CSS, JS, Webpack",
     "link": "https://sea-man.org/testy/mintra-online",
-    "img": "../../src/assets/test.jpg"
+    "img": "../../public/assets/test.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "desc": "Landing page with information about salaries for all marine job titles.",
     "tech": "CSS, JS, Webpack",
     "link": "https://sea-man.org/zarplaty-moryakov",
-    "img": "../../src/assets/salaries.jpeg"
+    "img": "../../public/assets/salaries.jpeg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "desc": "Comprehensive information about 3800 ports all around the world.",
     "tech": "CSS, JS, Webpack",
     "link": "https://sea-man.org/all-sea-ports",
-    "img": "../../src/assets/ports.jpg"
+    "img": "../../public/assets/ports.jpg"
   },
   {
     "id": 5,
@@ -37,6 +37,6 @@
     "desc": "Todo app, with possibility to add priority and date to the tasks. Also you can add special lists for your tasks, for example \"Morning routine\", etc.",
     "tech": "CSS, JS, Webpack",
     "link": "https://github.com/serverwind/remember-me",
-    "img": "../../src/assets/todo.jpg"
+    "img": "../../public/assets/todo.jpg"
   }
 ]

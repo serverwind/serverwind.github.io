@@ -1,5 +1,5 @@
-import linkedin from "../assets/linkedin.svg";
-import github from "../assets/github.svg";
+import linkedin from "../../public/assets/linkedin.svg";
+import github from "../../public/assets/github.svg";
 
 const SocialIcons = ({ img, url, alt }) => {
   return (
